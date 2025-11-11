@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD-2</title>
+</head>
+<!--Refleksi-->
+<!--
+if digunakan untuk mengecek kondisi pertama.
+Kalau kondisi itu benar (true), maka perintah di dalamnya akan dijalankan.
+Sedangkan else if digunakan setelah if, untuk mengecek kondisi lain kalau kondisi pertama tadi salah.
+
+Apa yang terjadi bila semua kondisi salah?
+
+Jika semua kondisi if dan else if salah,
+dan tidak ada else di akhir,
+maka tidak ada perintah yang dijalankan sama sekali.
+-->
+<body>
+<script> 
+    let nilai = parseInt(prompt("masukkan nilai"));
+
+    if(nilai >= 70){
+        alert("lulus")
+    } else{
+        alert("belum lulus")
+    }
+
+    let usia = parseInt(prompt("berapa usia mu?"));
+
+    if(usia <13){
+        alert("kamu Anak-Anak.");
+    } else if(usia <=17){
+        alert("kamu Remaja.");
+    } else if(usia >=18){
+        alert("Dewasa");
+    }
+</script>
+</body>
+
+</html>
