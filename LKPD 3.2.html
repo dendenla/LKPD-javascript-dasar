@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Apa Manfaat Perulangan dibanding Menulis Perintah Berulang Kali -->
+
+    <!--Manfaat perulangan dibanding menulis perintah berulang kali:
+
+1. Menghemat waktu karena tidak perlu menulis kode yang sama berkali-kali.
+2. Mengurangi kesalahan karena kode lebih sedikit.
+3. Membuat program lebih rapi dan mudah dibaca.
+4. Lebih mudah diperbaiki jika ada perubahan.
+5. Lebih fleksibel untuk menangani data atau proses yang jumlahnya banyak.
+-->
+
+
+    <h1> LKPD 3.2 </h1>
+  <script>
+     let hitung = 2;
+     let genap = "";
+     while (hitung <=20) {
+        if (hitung % 2 === 0) {
+        genap += hitung + ", ";
+     }
+     hitung++;
+    }
+     genap = genap.slice(0, -2);
+     alert("hasilnya = " + genap);
+  </script>    
+</body>
+</html>
