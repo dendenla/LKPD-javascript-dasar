@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD PA ASEP</title>
+</head>
+<body>
+<h1> LKPD 5.2 </h1>
+
+<!--  Bagaimana cara menambahkan elemen baru ke array? -->
+
+<!-- push() → menambah elemen di akhir array.
+
+     unshift() → menambah elemen di awal array.
+
+     Set langsung dengan indeks → array[index] = nilai untuk menambah atau mengganti elemen.
+
+    splice() → menyisipkan elemen di posisi tertentu dalam array.
+    -->
+<script>
+let nilaiSiswa = [80, 75, 90, 85, 70, 95];
+
+let total = 0;
+
+for (let i = 0; i < nilaiSiswa.length; i++) {
+    total += nilaiSiswa[i];
+}
+
+let rataRata = total / nilaiSiswa.length;
+
+alert("Rata-rata nilai siswa adalah: " + rataRata);
+</script>
+</body>
+</html>
