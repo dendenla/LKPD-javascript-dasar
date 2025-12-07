@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Tebak Angka</title>
+</head>
+<body>
+    <h2>Game Tebak Angka</h2>
+
+    <input type="number" id="tebakan" placeholder="Masukkan angka 1-10">
+    <button onclick="cekTebakan()">Coba!</button>
+    <button onclick="resetGame()">Reset</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        let angkaBenar = Math.floor(Math.random() * 10) + 1;
+
+        function cekTebakan() {
+            let tebakan = parseInt(document.getElementById("tebakan").value);
+            let pesan = "";
+
+            if (tebakan === angkaBenar) {
+                pesan = "Tebakan kamu BENAR! 🎉";
+            } else {
+                pesan = "Salah, coba lagi!";
+            }
+
+            document.getElementById("hasil").innerHTML = pesan;
+        }
+
+        function resetGame() {
+            angkaBenar = Math.floor(Math.random() * 10) + 1;
+            document.getElementById("hasil").innerHTML = "";
+            document.getElementById("tebakan").value = "";
+        }
+    </script>
+</body>
+</html>
